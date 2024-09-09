@@ -146,3 +146,27 @@ Each model is evaluated using:
 ## Evaluation Metrics
 
 For each model, the following performance metrics are calculated:
+
+```
+
+rmse = np.sqrt(mean_squared_error(actual, predicted))
+r2 = r2_score(actual, predicted)
+
+```
+
+## Stock Analysis Charts
+
+For each model, a stock analysis chart is generated comparing the actual stock price with the predicted stock price.
+
+## Results
+
+| Model            | Accuracy                                                               |
+| ----------------- | ------------------------------------------------------------------ |
+| LSTM | 90.3% |
+| SVM | 90.7% |
+| SVR| 92.3% |
+| KNN | 94% |
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
