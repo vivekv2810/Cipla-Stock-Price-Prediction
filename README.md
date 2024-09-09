@@ -75,3 +75,74 @@ cd cipla-stock-prediction
 3. Place the dataset (```CIPLA.csv```) in the project folder.
 
 4. Run the code file (```stock_prediction.py```).
+
+## Model Implementation
+
+## Exploratory Data Analysis (EDA)
+
+Before training the models, EDA is performed to understand the data distribution and check for any anomalies or missing values.
+
+- Plotting the **closing price** over time.
+- Generating a **correlation heatmap** to visualize relationships between features.
+
+## Data Preprocessing
+
+- **Scaling**: The feature values (```Open```, ```High```, ```Low```, ```Volume```) are scaled using ```StandardScaler``` and ```MinMaxScaler```.
+
+- **Splitting**: The dataset is split into training and testing sets using an 80-20 ratio.
+
+## LSTM Model
+
+The LSTM model is used to predict stock prices based on temporal data. The key steps include:
+
+- Reshaping data for LSTM input format.
+
+- Building a sequential LSTM network with multiple layers.
+
+- Training the model for 50 epochs and generating predictions.
+
+- Plotting the predicted vs. actual stock prices.
+
+## SVM Model
+
+Support Vector Machines (SVM) are used for regression. The steps include:
+
+- Fitting the SVM model using a radial basis function (RBF) kernel.
+
+- Generating predictions and plotting the results.
+
+## SVR Model
+
+Support Vector Regression (SVR) is another regression model, similar to SVM but specifically for continuous data. The implementation follows:
+
+- Fitting the SVR model and making predictions.
+
+- Visualizing predicted vs. actual stock prices.
+
+## KNN Model
+
+K-Nearest Neighbors (KNN) is a non-parametric method used for regression. Steps include:
+
+- Fitting the KNN model using 5 neighbors.
+
+- Predicting stock prices and comparing them to the actual values.
+
+## K-Means Clustering
+
+K-Means Clustering is used to group the stock data into clusters for further analysis. The steps are:
+
+- Fitting the KMeans model and assigning clusters.
+
+- Visualizing clusters based on stock volume and closing prices.
+
+## Evaluation and Stock Analysis
+
+Each model is evaluated using:
+
+- **RMSE (Root Mean Squared Error)**: A standard measure of the model's prediction error.
+
+- **R² (R-squared)**: Indicates how well the model fits the data.
+
+## Evaluation Metrics
+
+For each model, the following performance metrics are calculated:
